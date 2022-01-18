@@ -16,7 +16,7 @@ exports.signup = (req, res, next) => {
                 password: hash
             })
 
-            // Engistrer l'user crypter dans la base de donnée
+            // Enregistrer l'user crypter dans la base de donnée
             user.save()
                 .then(() => res.status(201).json({ message: "Utilisateur créé !" }))
                 // Si user existe error 400

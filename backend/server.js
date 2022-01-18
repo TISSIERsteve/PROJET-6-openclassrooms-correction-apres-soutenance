@@ -2,9 +2,11 @@
 const http = require('http');
 const app = require('./app');
 
+// Mise en route MongoDB
 const connectionDB = require("./config/db")
 connectionDB()
 
+// Gestionnaire erreur serveur
 const normalizePort = val => {
     const port = parseInt(val, 10);
 

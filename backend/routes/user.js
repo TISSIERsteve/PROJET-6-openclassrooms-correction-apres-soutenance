@@ -1,5 +1,7 @@
 const express = require("express")
 const router = express.Router()
+
+// Import fonction
 const userCtrl = require("../controller/user")
 
 // ========================================= ROUTES ====================================================

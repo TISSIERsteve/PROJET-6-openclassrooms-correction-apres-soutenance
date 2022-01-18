@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose")  // Plugin pour se connecter à mongo DB
 require("dotenv").config({ path: "./config/.env" })
 
 // Fonction qui appel mongo db
