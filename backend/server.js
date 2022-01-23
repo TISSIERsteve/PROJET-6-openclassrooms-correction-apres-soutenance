@@ -29,11 +29,11 @@ const erreurServer = error => {
     const bind = typeof address === 'string' ? 'pipe ' + address : 'port: ' + port;
     switch (error.code) {
         case 'EACCES':
-            console.error(bind + ' requires elevated privileges.');
+            console.error(bind + ' necessite des privileges élevés');
             process.exit(1);
             break;
         case 'EADDRINUSE':
-            console.error(bind + ' is already in use.');
+            console.error(bind + ' en cours');
             process.exit(1);
             break;
         default:

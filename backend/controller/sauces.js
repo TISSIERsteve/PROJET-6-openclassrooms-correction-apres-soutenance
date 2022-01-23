@@ -1,5 +1,5 @@
 const Sauce = require("../models/Sauce") // Je récupère mon model sauce
-const fs = require("fs") // Permet de supprimer le produit dans le dossier image
+const fs = require("fs") // Permet de gérer le télèchargements et la modification du produit 
 
 // ======================================= CREATION SAUCE ==============================================
 exports.createSauce = (req, res, next) => {

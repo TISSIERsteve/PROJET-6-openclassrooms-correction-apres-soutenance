@@ -1,9 +1,6 @@
 const express = require("express")
 const app = express()
 const path = require("path")
-const helmet = require("helmet")
-
-app.use(helmet()) // Sécurise les entêtes HTTP
 
 app.use(express.urlencoded({ extended: true })) //Middleware permet de passer des requêtes 
 
